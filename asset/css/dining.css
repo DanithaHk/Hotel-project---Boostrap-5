@@ -1,0 +1,92 @@
+.navbar-brand {
+    color: black;
+    font-family: "Cinzel", serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.Book-your-Stay {
+    color: rgb(173, 151, 26);
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(165, 146, 35);
+    transition: 0.7s background-color;
+}
+
+.Book-your-Stay:hover {
+    background-color: rgb(243, 221, 95);
+    color: #222f;
+}
+
+.navbar-expand-lg {
+    background-color: rgb(245, 243, 242);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1rem;
+
+
+}
+
+.nav-link {
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: black;
+}
+
+.d-block {
+    width: 100vw;
+    height: 100vh;
+}
+
+.btn {
+    width: 13rem;
+    height: 3.5rem;
+}
+
+.text-center {
+    margin: 20px;
+    color: black;
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+}
+
+footer{
+    width: 98.5vw;
+    height: 30vh;
+}
+@media (min-width : 900px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        width: 0%;
+        height: 2px;
+        background-color: rgb(165, 146, 35);
+        transform: translateX(-50%);
+        visibility: hidden;
+        transition: 1s ease;
+    }
+
+    .nav-link:hover::before 
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.carouselExampleSlidesOnly img{
+    width: 100vw;
+    height: 40vh;
+}
+
+.col img{
+    height: 33rem;
+}

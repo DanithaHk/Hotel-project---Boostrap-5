@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani-hotel-Dikwella</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- google fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+            <!-- my style sheet -->
+            <link rel="stylesheet" href="asset/css/index.css">
+</head>
+<body>
+    <header>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/asset/images/ani 3.jpg" class="d-block w-100" alt="Ani-Resort">
+            </div>
+            <div class="carousel-item">
+                <img src="asset/images/ani 4.webp" class="d-block w-100" alt="Ani-Resort">
+            </div>
+            <div class="carousel-item">
+                <img src="/asset/images/ani 6.png" class="d-block w-100" alt="Ani-Resort">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#">Ani-Resort</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="/pages/dining.html">Dining</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="/pages/event.html">Celebrations & Events</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Accomadation
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/classicSuite.html">Classic Suite</a></li>
+                                <li><a class="dropdown-item" href="/pages/familySuite.html">Family Suite</a></li>
+                                <li><a class="dropdown-item" href="/pages/splitLevelsuite.html">Split Level Suite</a></li>
+                                <li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="Book-your-Stay text-decoration-none">Book your Stay</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- booking bar - input -->
+    <div class="container overflow-hidden align-content-center">
+    <div class="row g-2 my-3">
+        <div class="col-md">
+            <div class="form-floating">
+                <input type="date" class="form-control" id="datetimepicker" >
+                <label for="datetimepicker">Book your stay with us!</label>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid">
+                    <option selected>Family Package</option>
+                    <option value="1">Couple Package</option>
+                    <option value="2">Luxury Package</option>
+                    <option value="3">Honeymoon Package</option>
+                </select>
+                <label for="floatingSelectGrid">Our Packages</label>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid">
+                    <option selected>Ocean View Suite</option>
+                    <option value="1">Bay View Suite</option>
+                    <option value="2">Garden View Junior Suite</option>
+                    <option value="3">Split Level Suite</option>
+                </select>
+                <label for="floatingSelectGrid">1 Geust - 1 Room </label>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com"
+                    value="mdo@example.com">
+                <label for="floatingInputGrid">Email address</label>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="form-floating">
+                <button type="button" class="btn btn-warning">Book Your Stay</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </header>
+    <!-- Section 2 -->
+    <!-- into grid  -->
+   
+        <p class="h2 text-center py-2">Ani-Resort</p>
+
+        <div class="container text-sm-start">
+            <div class="row">
+                <div class="col">
+                Experience the ultimate blend of luxury, adventure, and authentic Sri Lankan hospitality with our exclusive hotel
+                packages. Nestled along the pristine beaches of Sri Lanka, our luxurious beachfront villas offer panoramic ocean views
+                and the soothing sounds of waves, ensuring a tranquil escape. Indulge in our tropical spa oasis, where traditional Sri
+                Lankan wellness practices are combined with modern relaxation techniques, providing a rejuvenating retreat. Savor the
+                flavors of Sri Lanka with our gourmet dining options, featuring fresh, locally sourced ingredients and expertly crafted
+                dishes
+                For adventure seekers and cultural enthusiasts, our hotel is ideally located near ancient temples, tea plantations, and
+                wildlife sanctuaries, offering the perfect gateway to explore Sri Lanka’s rich heritage. Our exclusive excursions
+                include guided tours to UNESCO World Heritage sites, thrilling wildlife safaris, and scenic hikes through lush
+                rainforests. You can also dive into exciting watersports like surfing, snorkeling, and scuba diving for an
+                adrenaline-packed experience.
+                </div>
+                <div class="col align-middle ps-5 pt-1">
+                    <img src="/asset/images/ani 5.jpg" class="img-fluid rounded" alt="Ani-Resort">
+                </div>
+            </div>
+            </div>
+        
+        <!-- Highlights -->
+            <div class="container-sm ">
+                <h1 class="display-5 text-center m-lg-5">Highlights</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4 pb-5">
+                    <div class="col">
+                        <div class="card">
+                            <img src="/asset/images/card/ANI-Sri-Lanka-Resort-Beach.webp" class="card-img-top" alt="Ani-Resort">
+                            <div class="card-body">
+                                <h3 class="card-title text-lg-center ">Panoramic views</h3>
+                                <p class="card-text  text-lg-center">beachfront setting with serene tropical surroundings, possibly with panoramic views of the ocean.</p>
+                            </div>
+                            <div class="d-flex justify-content-evenly">
+                                <button class="btn btn-dark mb-4 rounded-pill  w-50 h-25" type="button">view more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/asset/images/card/ani surf.jpg" class="card-img-top" alt="ANI-Sri-Lanka-Resort-Beach">
+                            <div class="card-body">
+                                <h3 class="card-title text-lg-center">Surf</h3>
+                                <p class="card-text text-lg-center">Beach has consistent waves suitable for surfers of all levels The beach is surrounded by lush greenery and offers a laid-back</p>
+                            </div>
+                            <div class="d-flex justify-content-evenly">
+                                <button class="btn btn-dark mb-4 rounded-pill  w-50 h-25" type="button">view more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/asset/images/card/ani art 2.jpg" class="card-img-top" alt="Ani-Resort-art">
+                            <div class="card-body">
+                                <h3 class="card-title text-lg-center">Ani Art Gallery</h3>
+                                <p class="card-text text-lg-center">collection of contemporary art, showcasing works by both local Sri Lankan
+                                artists and international creators.</p>
+                            </div>
+                            <div class="d-flex justify-content-evenly">
+                                <button class="btn btn-dark mb-4 rounded-pill  w-50 h-25" type="button">view more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/asset/images/card/ANI-Thailand-Dining-Beach-Dinner-4-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-lg-center">Variety of Dining</h3>
+                                <p class="card-text text-lg-center">including beachfront meals with ocean views, poolside BBQs featuring freshly
+                                    grilled seafood, and serene garden or
+                                    terrace dining luxurious experiences</p>
+                            </div>
+                            <div class="d-flex justify-content-evenly">
+                                <button class="btn btn-dark mb-4 rounded-pill  w-50 h-25" type="button">view more</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                        <img src="/asset/images/card/ani craft.jpg" class="card-img-top h-25" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-lg-center">Kids Craft</h3>
+                            <p class="card-text text-lg-center"> encourage creativity, improve fine motor skills, and foster social interaction.
+                                Kids enjoy
+                                hands-on experiences learning about nature, recycling, and sharing</p>
+                        </div>
+                        <div class="d-flex justify-content-evenly">
+                            <button class="btn btn-dark mb-4 rounded-pill  w-50 h-25" type="button">view more</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/asset/images/card/poretry.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-lg-center ">Pottery Making</h3>
+                                <p class="card-text text-lg-center">pottery-making through guided workshops. Under the guidance of skilled
+                                local artisans, guests can shape and mold clay into various forms</p>
+                            </div>
+                            <div class="d-flex justify-content-evenly">
+                                <button class="btn btn-dark mb-4 rounded-pill  w-50 h-25" type="button">view more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Hotel Gallery  -->
+        <div class="container d-flex p-2 flex-column ">
+            <h1 class="display-5 text-center">-Our Gallery-</h1>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/asset/images/card/ANI-Sri-Lanka-Private-Dining.webp" class="d-block w-100 h-50 img-fluid rounded mx-auto d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/asset/images/ani 6.png" class="d-block w-100  h-50 img-fluid rounded mx-auto d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/asset/images/ani 3.jpg" class="d-block w-100  h-50  img-fluid rounded mx-auto d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/asset/images/ani 2.webp" class="d-block w-100  h-50  img-fluid rounded mx-auto d-block" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- map -->
+        <div class="container d-flex ">
+            <div class="row column-gap-3 mx-2 my-5">
+                <div class="col mb-3">
+                   <h2 class="text-center " style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Travelling to ANI Sri Lanka</h2>
+                   <p class="details py-2">30-minute drive from Mawella Lagoon, where sea planes land after a 35-minute flight from Colombo.</p>
+                   <p class="details py-2">An 80-minute drive from Mattala Rajapaksa International Airport.</p>
+                   <p class="details py-2">A three-hour drive from Bandaranaike International Airport (CMB) in Colombo</p>
+                   <p class="details py-2">Direct flights connect with Abu Dhabi, Bangkok, Doha, Dubai, Frankfurt, Hong Kong, Kuala Lumpur, London, Melbourne,
+                      Paris, Shanghai, Singapore, and Warsaw​.</p>
+                </div>
+                <div class="col">
+            <iframe class="rounded-2 mt-3 "
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2032797.6668468206!2d79.8194286!3d5.6685377!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae137bd31bae357%3A0xa159461394353e10!2s%C3%80NI%20-%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1730480888715!5m2!1sen!2slk"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <footer class="footer bg-dark" >
+        <!-- footer -->
+        <div class="container ">
+            <div >
+                <h3  class="footer-header text-center text-light mt-5 pt-5">Become a Friend of ÀNI</h3>
+               
+                    <p class="text-light">Making the world a little smaller by bringing together family and friends, the ÀNI constellation of resorts creates a
+                    wanderlust trail across the globe. We aim to be a continuous source of inspiration.</p>
+                </div>
+                
+            </div>
+            </footer >
+    <!--boosttrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

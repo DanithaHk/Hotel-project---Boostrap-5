@@ -1,0 +1,130 @@
+.navbar-brand {
+    color: black;
+    font-family: "Cinzel", serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.Book-your-Stay {
+    color: rgb(173, 151, 26);
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(165, 146, 35);
+    transition: 0.7s background-color;
+}
+
+.Book-your-Stay:hover {
+    background-color: rgb(243, 221, 95);
+    color: #222f;
+}
+
+.navbar-expand-lg {
+    background-color: rgb(245, 243, 242);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1rem;
+
+
+}
+
+.nav-link {
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: black;
+}
+
+.d-block {
+    width: 100vw;
+    height: 100vh;
+}
+
+.btn {
+    width: 13rem;
+    height: 3.5rem;
+}
+
+.text-center {
+    margin: 20px;
+    color: black;
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+}
+
+footer{
+    width: 98.7vw;
+    height: 30vh;
+}
+
+@media (min-width : 900px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        width: 0%;
+        height: 2px;
+        background-color: rgb(165, 146, 35);
+        transform: translateX(-50%);
+        visibility: hidden;
+        transition: 1s ease;
+    }
+
+    .nav-link:hover::before .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+
+    .section-title {
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    font-family: "Cinzel", serif;
+    color: rgb(17, 15, 6);;
+
+    }
+    .section-content {
+      text-align: center;
+      font-size: 1rem;
+      color: #6c757d;
+      line-height: 1.8;
+      padding: 0 15%;
+    }
+
+        .image-gallery img {
+            width: 100%;
+            height: 50vh;
+            border-radius: 8px;
+        }
+    
+        .text-section h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    
+        .text-section h3 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+    
+        .text-section p {
+            font-size: 1rem;
+            color: #6c757d;
+            line-height: 1.8;
+        }
+        .holidays{
+            background-color: rgb(231, 241, 233);
+        }
